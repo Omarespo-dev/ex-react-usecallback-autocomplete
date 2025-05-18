@@ -22,6 +22,7 @@ function App() {
 
         //  La query deve essere sostituita con il testo digitato.
         const response = await fetch(`http://localhost:5000/products?search=${input}`)
+        
         const convertJson = await response.json()
 
         setData(convertJson)
